@@ -1,14 +1,1 @@
-"use strict";
-document.addEventListener('DOMContentLoaded', function () {
-  // Burger menu
-
-  document.querySelector('.burger').addEventListener('click', (e) => {
-    if (e.target) {
-      console.log("Pret");
-      e.target.classList.toggle("burger-rotate");
-      e.target.classList.toggle("open");
-      document.querySelector('.header-mob__nav').classList.toggle("hide");
-    }
-  });
-
-});
+"use strict";document.addEventListener("DOMContentLoaded",function(){const t=document.querySelector(".burger"),o=document.querySelector(".header-mob__nav");t.addEventListener("click",e=>{t.classList.toggle("burger-rotate"),t.classList.toggle("open"),o.classList.toggle("hide")})});
