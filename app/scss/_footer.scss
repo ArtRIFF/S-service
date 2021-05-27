@@ -1,0 +1,52 @@
+.footer {
+  background-color: $base-third-color;
+  background: linear-gradient(180deg, rgba(166,59,59,1) 0%, rgba(231,231,231,1) 53%);
+  padding: 20px 0;
+
+  &-top {
+    @include flex-around;
+
+    padding-bottom: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__logo {
+      width: 200px;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__schedule {
+      width: 250px;
+
+      @include flex-around;
+
+      align-items: center;
+
+      &__img {
+        width: 100px;
+      }
+
+      &__text {
+        width: 150px;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  &-bottom {
+    min-height: 15px;
+
+    &__copywrite {
+      font-style: bold;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 22px;
+      color: black;
+      text-align: center;
+      margin: 25px 0 0 0;
+    }
+  }
+}

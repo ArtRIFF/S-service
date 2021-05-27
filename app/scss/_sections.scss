@@ -43,11 +43,10 @@
   @keyframes colorChange {
     25% {
       color: blue;
-     
     }
 
     50% {
-      color:rgb(41, 209, 167);
+      color: rgb(41, 209, 167);
     }
 
     75% {
@@ -65,5 +64,33 @@
 
   &__btn {
     margin: auto;
+  }
+}
+
+//Hello
+.hello {
+  padding: 20px 0 20px 0;
+  margin-bottom: 30px;
+
+  &__wrapper {
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    width: 550px;
+    margin: auto;
+    padding: 0 10px;
+    color: black;
+
+    @media (max-width: 605px) {
+      width: 100%;
+    }
   }
 }
