@@ -36,10 +36,6 @@ li {
   }
 }
 
-.hide {
-  display: none;
-}
-
 .btn--primary {
   width: 200px;
   height: 70px;
@@ -95,6 +91,7 @@ li {
   border-radius: 20px 20px 20px 20px;
   border: 2px solid black;
   padding: 10px;
+
   @include flex-around;
 
   &__block {
@@ -125,9 +122,17 @@ textarea {
 }
 
 .fixed-bg {
-  background: linear-gradient(rgba(166,59,59,0.8), rgba(231,231,231, 0.7)), url(../_img/hello.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top;
+  background: linear-gradient(rgba(166, 59, 59, 0.8), rgba(231, 231, 231, 0.7)), url(../img/hello.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }

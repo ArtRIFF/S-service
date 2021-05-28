@@ -90,28 +90,26 @@
     display: none;
     width: 50px;
     height: 50px;
+    margin-bottom: 12px;
 
     &__nav {
-      animation-duration: 1s;
-      animation-name: slidein;
-      position: fixed;
-      top: 20%;
-      left: 75%;
-      background-color: rgba(35, 194, 206, 0.24);
+      width: 100%;
+      position: absolute;
+      top: 23%;
+      left: 0%;
+      display: none;
+      background-color: $base-third-color;
+      opacity: 0.8;
+      border: 8px solid $base-color;
 
-      @keyframes slidein {
-        from {
-          transform: translateX(100%);
-        }
-
-        to {
-          transform: translateX(0%);
-        }
+      &__show {
+        display: inline-block;
       }
     }
 
     &__list {
       min-height: 250px;
+      text-align: center;
 
       @include flex-column;
     }

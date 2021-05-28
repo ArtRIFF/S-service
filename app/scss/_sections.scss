@@ -67,6 +67,15 @@
   }
 }
 
+.timer {
+  &__block {
+    width: 77px;
+    &__item {
+    font-size: 14px;
+    }
+  }
+}
+
 //Hello
 .hello {
   padding: 20px 0 20px 0;
