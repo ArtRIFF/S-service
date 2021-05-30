@@ -70,8 +70,9 @@
 .timer {
   &__block {
     width: 77px;
+
     &__item {
-    font-size: 14px;
+      font-size: 14px;
     }
   }
 }
@@ -98,8 +99,24 @@
     padding: 0 10px;
     color: black;
 
+    &__list {
+      // list-style: circle outside;
+    }
+
     @media (max-width: 605px) {
       width: 100%;
+    }
+  }
+}
+
+.statistical {
+  padding-bottom: 50px;
+
+  &__info {
+    text-align: center;
+
+    &__title {
+      color: green;
     }
   }
 }
