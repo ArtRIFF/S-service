@@ -120,3 +120,48 @@
     }
   }
 }
+
+// Contact
+.contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__info {
+    @include flex-column;
+
+    margin-bottom: 30px;
+    min-height: 300px;
+
+    @media (max-width: 919px) {
+      margin: 30px auto;
+    }
+
+    &__title {
+      margin: 0;
+    }
+  }
+
+  &__map {
+    @media (max-width: 919px) {
+      margin: 30px auto;
+    }
+
+    @media (max-width: 577px) {
+      width: 100%;
+    }
+  }
+
+  &__iframe {
+    @media (max-width: 577px) {
+      width: inherit;
+    }
+  }
+
+  &__wrapper {
+    @include flex-between;
+
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+}
