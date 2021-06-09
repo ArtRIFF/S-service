@@ -69,15 +69,15 @@ function convertStyles() {
 }
 
 function uglifyJS() {
-  return src('app/js/*.js')
+  return src('app/js_original/*.js')
   .pipe(uglify())
-  .pipe(dest("app/js_original/"));
+  .pipe(dest("app/js/"));
 }
 
 function imagesCompressed() {
-  return src('app/img/*.{jpg,png,svg}')
+  return src('app/_img/*.{jpg,png,svg}')
   .pipe(imagemin())
-  .pipe(dest("app/_img"));
+  .pipe(dest("app/img"));
 }
 
 function browserSync() {
@@ -94,9 +94,9 @@ function watchFiles() {
   watch('app/pages/**/*.html', fileinclude);
   watch('app/*.html').on("change", sync.reload);
   watch('app/css/*.css').on("change", sync.reload);
-  watch('app/js_original/*.js').on("change", sync.reload);
-  watch('app/js/*.js',uglifyJS);
-  watch('app/img',imagesCompressed);
+  watch('app/js/*.js').on("change", sync.reload);
+  watch('app/js_original/*.js',uglifyJS);
+  watch('app/_img',imagesCompressed);
 }
 
 //!Build
