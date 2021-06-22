@@ -98,4 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+// Slider
+const prevBtn = document.querySelector('.services__slider__prev'),
+nextBtn =document.querySelector('.services__slider__next');
+
+
 });

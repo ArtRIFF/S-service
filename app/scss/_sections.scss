@@ -184,6 +184,14 @@
       text-align: center;
     }
 
+    &__cards {
+      @include flex-between;
+
+      width: 320px;
+      margin: auto;
+      overflow: hidden;
+    }
+
     &__card {
       padding: 10px;
       width: 320px;
@@ -192,26 +200,38 @@
       border-radius: 10px;
     }
 
+    &__picture {
+      width: 300px;
+      height: 200px;
+    }
+
     &__img {
-      width: 100%;
+      width: inherit;
+      height: inherit;
     }
 
     &__btns {
-      position: absolute;
-      right: 100%;
-      right: 33%;
-      top: 50%;
-      width: 380px;
+      position: relative;
+      width: 280px;
+      margin: auto;
 
       @include flex-between;
     }
 
-    &__prev {
+    &__btn {
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      height: 45px;
+    }
 
+    &__prev {
+      border-radius: 10px 0 0 10px;
     }
 
     &__next {
-
+      right: 0%;
+      border-radius: 0 10px 10px 0;
     }
   }
 }
