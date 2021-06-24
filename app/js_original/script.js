@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Timer
-
+ 
   const deadline = '2021-07-11';
 
   function getTimeRemaining(endtime) {
@@ -65,6 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setClock('.timer', deadline);
 
+ 
+
+
   // Modal
 
   const modalTrigger = document.querySelectorAll('[data-modal]'),
@@ -97,10 +100,6 @@ document.addEventListener('DOMContentLoaded', function () {
       closeModal();
     }
   });
-
-// Slider
-const prevBtn = document.querySelector('.services__slider__prev'),
-nextBtn =document.querySelector('.services__slider__next');
 
 
 });

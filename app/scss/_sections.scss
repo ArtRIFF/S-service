@@ -178,25 +178,24 @@
   }
 
   &__slider {
-    position: relative;
+    overflow:hidden;
+    width: 320px;
+    margin: auto;
 
     &__title {
       text-align: center;
     }
 
     &__cards {
-      @include flex-between;
-
-      width: 320px;
-      margin: auto;
-      overflow: hidden;
+      width: 100%;
+      display: flex;
+      transition: all 0.5s ease 0s;
     }
 
     &__card {
       padding: 10px;
       width: 320px;
       background-color: $base-third-color;
-      margin: auto;
       border-radius: 10px;
     }
 
