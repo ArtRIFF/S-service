@@ -3,16 +3,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Mob menu
   const mobIcon = document.querySelector('.burger'),
-  mobMenu = document.querySelector('.header-mob__nav');
+    mobMenu = document.querySelector('.header-mob__nav');
   mobIcon.addEventListener("click", (e) => {
-  mobIcon.classList.toggle("burger-rotate");
-  mobIcon.classList.toggle("open");
-  mobMenu.classList.toggle("header-mob__nav__show");
+    mobIcon.classList.toggle("burger-rotate");
+    mobIcon.classList.toggle("open");
+    mobMenu.classList.toggle("header-mob__nav__show");
   });
 
   // Timer
- 
-  const deadline = '2021-07-11';
+
+  const deadline = '2021-09-09';
 
   function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setClock('.timer', deadline);
 
- 
+
 
 
   // Modal
@@ -101,5 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // Contact form
+
+ 
 
 });

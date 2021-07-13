@@ -48,53 +48,33 @@
     </div>
   </header>
 
-<section class="hello">
+<section class="application">
   <div class="container">
-    <div class="hello__wrapper fixed-bg">
-      <h2 class="hello__title">Здравствуйте!</h2>
-      <div class="hello__text">
-        <P>Успейте получить талон на бесплатную диагностику от  <strong>S-service</strong></P>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<section class="offer-share">
-  <div class="offer-share__wrapper container">
-    <div class="offer-share__picture"><img src="img/offer__img.jpg" alt="offer__img" class="offer-share__img"></div>
-    <div class="offer-share__desc">
-      <h1 class="offer-share__title">Акция!!!</h1>
-      <p class="offer-share__text">Успей получить бесплатную диагностику!</p>
-      <div class="offer-share__timer">
-        <p class="offer-share__title">до окончания акции осталось:</p>
-        <div class="offer-share__time timer">
-          <div class="timer__block"><span class="timer__block__item" id="days">00</span>-Дней</div>
-          <div class="timer__block"><span class="timer__block__item" id="hours">00</span>-Часов</div>
-          <div class="timer__block"><span class="timer__block__item" id="minutes">00</span>-Минут</div>
-          <div class="timer__block"><span class="timer__block__item" id="seconds">00</span>-Секунд</div>
-        </div>
-      </div>
-      <div data-modal class="offer-share__btn btn--primary btn--dark"><p class="btn--primary__text">Получить купон</p></div>
-    </div>
-  </div>
-</section>
-<div class="modal hide">
-  <div class="modal__dialog">
-    <div class="modal__content">
-      <form action="#">
-        <div data-close="" class="modal__close">×</div>
-        <div class="modal__title">Получить купон на 
-          БЕСПЛАТНУЮ ДИАГНОСТИКУ</div>
-        <input required="" placeholder="Ваше имя" name="name" type="text" class="modal__input">
-        <input required="" placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-        <div data-modal class="modal__btn btn--primary btn--white"><p class="btn--primary__text">Получить купон</p></div>
+    <h2 class="application__title">Оформить заявку</h2>
+    <div class="application__content fixed-bg">
+      <form class="js-form application__form ">
+        <input id="name-user" placeholder="Ваше имя" name="name-user" type="text" class="application__input">
+        <input id="mail-user" placeholder="Ваш email" name="mail-user" type="text" class="application__input">
+        <input id="phone-user" placeholder="Ваш номер телефона" name="phone-user" type="phone"
+          class="application__input inputPhone">
+        <select class="application__input application__subject" name="subject-user">
+          <option class="application__options">Тема письма</option>
+          <option class="application__options">Ремонт прибора</option>
+          <option class="application__options">Сотрудничество</option>
+          <option class="application__options">Жалоба</option>
+        </select>
+        <textarea class="application__textarea application__input" id="textarea-user" placeholder="Напишите нам!"
+          name="textarea-user"></textarea>
+        <button type='submit' id="user-btn" class="modal__btn btn--primary btn--white application__button"
+          name="user-btn">
+          <p class="btn--primary__text">Отправить</p>
+        </button>
       </form>
+
     </div>
   </div>
-</div>
-
-
+</section>
+<script src="js/application-form.js"></script>
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
