@@ -53,10 +53,10 @@
     <h2 class="application__title">Оформить заявку</h2>
     <div class="application__content fixed-bg">
       <form class="js-form application__form ">
-        <input id="name-user" placeholder="Ваше имя" name="name-user" type="text" class="application__input">
-        <input id="mail-user" placeholder="Ваш email" name="mail-user" type="text" class="application__input">
+        <input id="name-user" placeholder="Ваше имя" name="name-user" type="text" class="application__input" data-validate-field="name">
+        <input id="mail-user" placeholder="Ваш email" name="mail-user" type="text" class="application__input" data-validate-field="email">
         <input id="phone-user" placeholder="Ваш номер телефона" name="phone-user" type="phone"
-          class="application__input inputPhone">
+          class="application__input inputPhone" data-validate-field="phone">
         <select class="application__input application__subject" name="subject-user">
           <option class="application__options">Тема письма</option>
           <option class="application__options">Ремонт прибора</option>
@@ -64,7 +64,7 @@
           <option class="application__options">Жалоба</option>
         </select>
         <textarea class="application__textarea application__input" id="textarea-user" placeholder="Напишите нам!"
-          name="textarea-user"></textarea>
+          name="textarea-user" data-validate-field="textarea"></textarea>
         <button type='submit' id="user-btn" class="modal__btn btn--primary btn--white application__button"
           name="user-btn">
           <p class="btn--primary__text">Отправить</p>
@@ -74,6 +74,7 @@
     </div>
   </div>
 </section>
+<script src="js/just-validate.min.js"></script>
 <script src="js/application-form.js"></script>
 <footer class="footer">
   <div class="container">
