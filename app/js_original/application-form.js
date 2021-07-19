@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             switch (xhr.status) {
               case 200:
                 console.log("We got succeed request");
+                showModalResult("Заявка отправлена!");
                 applicationForm.reset();
                 break;
               case 301:
@@ -52,9 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
               case 404:
                 console.log("We don't find anything!!!");
+                showModalResult("Ошибка!");
                 break;
               default:
                 console.log("Error!!!");
+                showModalResult("Ошибка!");
                 break;
             }
           };
@@ -62,5 +65,18 @@ document.addEventListener('DOMContentLoaded', function () {
         xhr.send(formData);
       }
     });
-  
+    
+  // result Modal
+ function showModalResult (status) {
+  const modalResult = document.createElement('div');
+  modalResult.classList.add('modalResult');
+  modalResult.innerHTML = `
+  <h3 class="modalResult__text">${status}</h3>
+  `;
+  applicationForm.append(modalResult);
+  setTimeout(() => {
+    modalResult.remove();
+  }, 4000);
+ };
+
 });
