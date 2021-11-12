@@ -33,6 +33,7 @@
 
     &__list {
       @include flex-between;
+      list-style: none;
     }
 
     &__link {

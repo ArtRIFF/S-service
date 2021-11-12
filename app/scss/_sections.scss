@@ -1,12 +1,8 @@
 // OFFER
 .offer-share {
   min-height: 400px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  &__picture {
-
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__img {
     width: 100%;
@@ -91,16 +87,30 @@
   &__title {
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 4px;
   }
 
   &__text {
-    width: 550px;
+    width: 800px;
     margin: auto;
     padding: 0 10px;
-    color: black;
+    color: rgb(50, 55, 129);
+    margin-top: 50px;
+    font-size: 20px;
 
     &__list {
-      // list-style: circle outside;
+     list-style-image: url(../img/favicon.ico);
+     list-style-position: inside;
+
+     &__title {
+      font-size: 25px;
+      margin-top: 50px;
+      text-decoration: underline;
+     }
+
+     &__item {
+      margin: 30px;
+     }
     }
 
     @media (max-width: 605px) {
@@ -117,6 +127,11 @@
 
     &__title {
       color: green;
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 20px;
     }
   }
 }
@@ -197,11 +212,18 @@
       width: 320px;
       background-color: $base-third-color;
       border-radius: 10px;
+
+      &__link {
+
+      }
     }
 
     &__picture {
+      display: inline-block;
       width: 300px;
       height: 200px;
+
+      
     }
 
     &__img {

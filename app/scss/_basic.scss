@@ -17,10 +17,6 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style-type: none;
-}
-
 //!Container
 .container {
   width: 100%;
@@ -127,6 +123,10 @@ textarea {
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
+}
+
+.border-frame {
+  border: 3px dotted #1AA473;
 }
 
 .show {

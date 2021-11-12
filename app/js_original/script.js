@@ -1,5 +1,19 @@
 "use strict";
 document.addEventListener('DOMContentLoaded', function () {
+  // Statistical animation
+
+
+  document.addEventListener('scroll', () => {
+    let procent = document.querySelector('.procent');
+
+    if (window.scrollY > 200) {
+      procent.innerHTML = 96 + window.scrollY - 280;
+    } else {
+      procent.innerHTML = "80";
+    }
+  });
+
+
 
   // Mob menu
   const mobIcon = document.querySelector('.burger'),
@@ -12,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Timer
 
-  const deadline = '2021-09-09';
+  const deadline = '2022-02-02';
 
   function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -100,9 +114,5 @@ document.addEventListener('DOMContentLoaded', function () {
       closeModal();
     }
   });
-
-  // Contact form
-
- 
 
 });
