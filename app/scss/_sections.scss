@@ -92,14 +92,14 @@
 
   &__text {
     width: 800px;
-    margin: auto;
+    margin: auto; 
     padding: 0 10px;
     color: rgb(50, 55, 129);
     margin-top: 50px;
     font-size: 20px;
 
     &__list {
-     list-style-image: url(../img/favicon.ico);
+     list-style: square;
      list-style-position: inside;
 
      &__title {
@@ -133,6 +133,48 @@
     &__text {
       font-size: 20px;
     }
+  }
+}
+//animatiopn procent
+.procent::after {
+  content: counter(count);
+  animation: counter 8s linear 1 alternate;
+  counter-reset: count 87;
+}
+
+@keyframes counter {
+  0% {
+    counter-increment: count -10;
+  }
+  10% {
+    counter-increment: count -9;
+  }
+  20% {
+    counter-increment: count -8;
+  }
+  30% {
+    counter-increment: count -7;
+  }
+  40% {
+    counter-increment: count -6;
+  }
+  50% {
+    counter-increment: count -5;
+  }
+  60% {
+    counter-increment: count -4;
+  }
+  70% {
+    counter-increment: count -3;
+  }
+  80% {
+    counter-increment: count -2;
+  }
+  90% {
+    counter-increment: count -1;
+  }
+  100% {
+    counter-increment: count 0;
   }
 }
 

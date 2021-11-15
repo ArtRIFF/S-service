@@ -1,19 +1,5 @@
 "use strict";
 document.addEventListener('DOMContentLoaded', function () {
-  // Statistical animation
-
-
-  document.addEventListener('scroll', () => {
-    let procent = document.querySelector('.procent');
-
-    if (window.scrollY > 200) {
-      procent.innerHTML = 96 + window.scrollY - 280;
-    } else {
-      procent.innerHTML = "80";
-    }
-  });
-
-
 
   // Mob menu
   const mobIcon = document.querySelector('.burger'),
