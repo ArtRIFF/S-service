@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Timer
 
-  const deadline = '2022-02-02';
+  const deadline = '2022-05-03';
 
   function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date()),

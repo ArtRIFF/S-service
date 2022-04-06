@@ -1,26 +1,30 @@
 // OFFER
 .offer-share {
-  min-height: 400px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  text-align: center;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.583)),
+    url('../img/background/bg1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  min-height: 633px;
+  padding-bottom: 70px;
 
-  &__img {
-    width: 100%;
+
+  &__angle {
+    transform: rotate(180deg);
   }
 
-  &__wrapper {
-    @include flex-around;
-
-    flex-wrap: wrap;
+  & > .hello__title {
+    color:$base-secondary-color;
   }
 
-  @media (max-width: 950px) {
-
-  }
-
+  
+  
   &__desc {
     text-align: center;
-    padding: 10px 10px 10px 10px;
+    padding: 30px 60px;
     border-radius: 10px;
     background-color: $base-third-color;
     border: 2px dotted $base-secondary-color;
@@ -32,30 +36,14 @@
 
   &__title {
     text-transform: uppercase;
-    color: red;
-    animation: colorChange 4s  infinite  ease-in-out;
+    color: white;
   }
 
-  @keyframes colorChange {
-    25% {
-      color: blue;
-    }
-
-    50% {
-      color: rgb(41, 209, 167);
-    }
-
-    75% {
-      color: $base-secondary-color;
-    }
-
-    100% {
-      color: rgb(214, 61, 235);
-    }
-  }
-
+  
   &__text {
     text-transform: uppercase;
+    color: white;
+    font-weight: bold;
   }
 
   &__btn {
@@ -63,9 +51,28 @@
   }
 }
 
+.present-us {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  &__text {
+    font-size: 20px;
+  }
+
+  &__picture {
+margin: 0 auto;
+width: 77%;
+  }
+
+  &__img {
+    width: inherit;
+  }
+}
+
 .timer {
   &__block {
     width: 77px;
+    color:red;
 
     &__item {
       font-size: 14px;
@@ -75,28 +82,61 @@
 
 //Hello
 .hello {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 0 0;
   margin-bottom: 30px;
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.661)),
+  url('../img/background/bg1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+min-height: 581px;
+padding-top: 31px;
+color:white;
 
-  &__wrapper {
-    margin: auto;
-    border-radius: 10px;
-    padding: 10px;
+&__angle {
+min-height: 190px;
+overflow: hidden;
+position: relative;
+background:rgba(255, 0, 0, 0.283);
+
+&::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    border-right: 913px solid transparent;
+    border-bottom: 140px  solid white;
   }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-left: 963px solid transparent;
+    border-bottom: 138px solid white;
+  }
+}
 
   &__title {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
+    font-size: 52px;
+    color: $base-color;
+    border-bottom: 1px solid $base-third-color;
   }
 
   &__text {
-    width: 800px;
+    width: 50%;
     margin: auto; 
-    padding: 0 10px;
+    padding: 0 30px;
     color: rgb(50, 55, 129);
     margin-top: 50px;
     font-size: 20px;
+    color:white;
 
     &__list {
      list-style: square;
@@ -117,8 +157,23 @@
       width: 100%;
     }
   }
+    
+  @media (max-width: 600px) {
+    &__title {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    min-height: 300px;
+    &__title {
+      font-size: 30px;
+    }
+  }
 }
 
+
+//s
 .statistical {
   padding-bottom: 50px;
 
