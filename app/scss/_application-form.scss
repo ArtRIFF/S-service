@@ -1,49 +1,84 @@
 .application {
-  padding: 20px 0 20px 0;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  position: relative;
-
-  &__title {
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__content {
-    border-radius: 10px;
-  }
+  padding: 20px 0 50px 0;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.583)),
+    url('../img/background/bg1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   &__form {
-    padding: 20px 0 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    min-height: 700px;
+    border-radius: 5px;
+    border:3px solid $base-color;
+    box-shadow: 14px 17px 8px 0 rgba(34, 60, 80, 0.2);
 
-    @include flex-column;
+&__title {
+ font-size: 25px;
+ font-style: italic;
+ font-weight: normal;
+ color: $base-secondary-color;
+ width: 100%;
+ margin: 0  0 40px;  
+ position: relative;
 
-    align-items: center;
-    min-height: 500px;
+ &::after {
+   content: "";
+   position: absolute;
+   background-color: $base-secondary-color;
+   right: -20px;
+   width: 10%;
+   height: 100%;
+ }
+
+ &::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: $base-color;
+  left: 0;
+  right: 0;
+  bottom: -130%;
+ }
+}
+
+&__btn-group {
+@include flex-between;
+}
+
+    &_item {
+     
+    }
   }
 
-  &__input {
-    display: block;
-    margin: 20px auto 20px auto;
+  &__input { 
     width: 280px;
     height: 50px;
-    background: #FFF;
-    border: none;
     font-size: 18px;
     text-align: center;
     padding: 0 20px;
     outline: 0;
-    box-shadow: 14px 17px 8px 0 rgba(34, 60, 80, 0.2);
+    border:1px solid $base-secondary-color;
+    border-radius: 5px;
+    box-shadow: 8px 8px 4px 0 rgba(34, 60, 80, 0.2);
   }
 
-  &__subject {
-    color: $base-color;
-    padding: 0 60px;
+  &__button {
+    width: 280px;
   }
 }
 
 .modalResult {
-  color: $base-color;
+  color: white;
   bottom: 100px;
   width: 300px;
   position: absolute;

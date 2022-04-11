@@ -22,18 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       messages: {
         name: {
-          required: "Введите имя!"
+          required: "Write your name!"
       
         },
         email: {
-          required: "Введите email!"
+          required: "Write your email!"
         },
         phone: {
-          required: "Введите номер телефона!"
+          required: "Write your phone number!"
         },
         textarea: {
-          required: "Вы забыли написать сообщение",
-          maxLength: "В кратце пожалуйста..."
+          required: "You forgot to write a massage!",
+          maxLength: "Shortly please..."
         }
       },
       submitHandler: function (applicationForm) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             switch (xhr.status) {
               case 200:
                 console.log("We got succeed request");
-                showModalResult("Заявка отправлена!");
+                showModalResult("application sent");
                 applicationForm.reset();
                 break;
               case 301:
@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
               case 404:
                 console.log("We don't find anything!!!");
-                showModalResult("Ошибка!");
+                showModalResult("Error!");
                 break;
               default:
                 console.log("Error!!!");
-                showModalResult("Ошибка!");
+                showModalResult("Error!");
                 break;
             }
           };

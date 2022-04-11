@@ -6,28 +6,36 @@
 )
 <section class="application">
   <div class="container">
-    <h2 class="application__title">Оформить заявку</h2>
-    <div class="application__content fixed-bg">
-      <form class="js-form application__form ">
-        <input id="name-user" placeholder="Ваше имя" name="name-user" type="text" class="application__input" data-validate-field="name">
-        <input id="mail-user" placeholder="Ваш email" name="mail-user" type="text" class="application__input" data-validate-field="email">
-        <input id="phone-user" placeholder="Ваш номер телефона" name="phone-user" type="phone"
-          class="application__input inputPhone" data-validate-field="phone">
+    <h2 class="hello__title">Conect with us</h2>
+      <form class="application__form">
+        <h4 class="application__form__title">Sending form</h4>
+        <div class="application__form__item">
+          <input id="name-user" placeholder="Name" name="name-user" type="text" class="application__input" data-validate-field="Surname">
+        </div>
+        <div class="application__form__item">
+          <input id="mail-user" placeholder="Email" name="mail-user" type="text" class="application__input" data-validate-field="email">
+        </div>
+        <div class="application__form__item">
+          <input id="phone-user" placeholder="Telephone number" name="phone-user" type="phone"
+            class="application__input inputPhone" data-validate-field="phone">
+        </div>
         <select class="application__input application__subject" name="subject-user">
-          <option class="application__options">Тема письма</option>
-          <option class="application__options">Ремонт прибора</option>
-          <option class="application__options">Сотрудничество</option>
-          <option class="application__options">Жалоба</option>
+          <option class="application__options">Subject Email</option>
+          <option class="application__options">Repair</option>
+          <option class="application__options">Collaboration</option>
+          <option class="application__options">Complaint</option>
         </select>
-        <textarea class="application__textarea application__input" id="textarea-user" placeholder="Напишите нам!"
-          name="textarea-user" data-validate-field="textarea"></textarea>
-        <button type='submit' id="user-btn" class="modal__btn btn--primary btn--white application__button"
+        <div class="application__form__item">
+          <textarea class="application__textarea application__input" id="textarea-user" placeholder="Write massage"
+            name="textarea-user" data-validate-field="textarea"></textarea>
+        </div>
+        <button type='submit' id="user-btn" class="modal__btn btn--primary btn--dark application__button"
           name="user-btn">
-          <p class="btn--primary__text">Отправить</p>
+          <p class="btn--primary__text">Send</p>
         </button>
       </form>
 
-    </div>
+  
   </div>
 </section>
 <script src="js/just-validate.min.js"></script>

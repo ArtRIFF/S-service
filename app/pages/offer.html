@@ -4,34 +4,198 @@
 "desc":"Качественный ремонт техники."
 }
 )
+<script defer src="../js/tab-menu.js"></script>
 <section class="hello">
-  <div class="container">
-    <div class="hello__wrapper fixed-bg">
-      <h2 class="hello__title">Здравствуйте!</h2>
-      <div class="hello__text">
-        <P>Чаще посещайте наш сайт,что-бы быть вкурсе наших акций от <strong>S-service</strong></P>
+  <h2 class="hello__title">Take a look on our parts</h2>
+  <div class="hello__text">
+    <P>Главная отличительная особенность качественной бытовой техники – это ее продолжительное функционирование без
+      перебоев в работе и не вызывающее проблем у своего владельца.</P>
+  </div>
+  <div class="hello__text">
+    <P>Однако из строя может выйти даже техника дорогого и качественного бренда.Для решения подобных проблем и работает
+      <strong>S-service</strong>, предоставляющий услуги по ремонту бытовой техники.
+      Опытные мастера <strong>S-service</strong> способны отремонтировать прибор, находящийся даже в критическом
+      состоянии.</P>
+  </div>
+  <div class="hello__angle">
+  </div>
+</section>
+<section class="our-services container">
+  <h3 class="hello__title">Buy our parts</h3>
+  <nav class="our-services__nav">
+    <ul class="our-services__menu">
+      <li class="our-services__tab active-tab " data-aplience-parts = 'washing-mashine'>Washing machine</li>
+      <li class="our-services__tab" data-aplience-parts = 'dishwasher'>Dishwasher</li>
+      <li class="our-services__tab" data-aplience-parts = 'vacuum-cleaner'>Vacuum cleaner</li>
+      <li class="our-services__tab" data-aplience-parts = 'cofee-mashine'>Cofee mashine</li>
+      <li class="our-services__tab" data-aplience-parts = 'dry-mashine'>Dry mashine</li>
+      <li class="our-services__tab" data-aplience-parts = 'fashion-master'>Fashion master</li>
+    </ul>
+  </nav>
+  <div class="our-services__content flex-row visible-content" data-aplience-parts = 'washing-mashine'>
+    <div class="part-card">
+      <div class="part-card__picture">
+        <img class="part-card__img" src="../img/drainPump.jpg" alt="image aplience part">
       </div>
-
+      <div class="part-card__desc">
+        <div class="part-card__desc__header">
+          <h3 class="part-card__desc__header__title">Washing Machine Drain Pump</h3>
+          <img src="../img/LG-logo.jpg" alt="company logo" class="part-card__desc__header__logo">
+        </div>
+        <div class="part-card__desc__text-container">
+          <p class="part-card__desc__text">Washing machine drain pump. If the washer does not drain then the drain pump may be clogged, damaged, or defective.</p>
+          <p class="part-card__desc__price">$51.50</p>
+        </div>
+        <div class="part-card__desc__menu">
+          <input class="part-card__desc__menu__input" type="number">
+          <button class="btn--primary btn--dark">Add to Cart</button>
+        </div>
+      </div>
     </div>
+    <div class="part-card">
+      <div class="part-card__picture">
+        <img class="part-card__img" src="../img/washRepairKit.jpg" alt="image aplience part">
+      </div>
+      <div class="part-card__desc">
+        <div class="part-card__desc__header">
+          <h3 class="part-card__desc__header__title">Washing Machine Agitator Repair Kit</h3>
+          <img src="../img/LG-logo.jpg" alt="company logo" class="part-card__desc__header__logo">
+        </div>
+        <div class="part-card__desc__text-container">
+          <p class="part-card__desc__text">Washing machine agitator directional cogs. These parts are also referred to as "dog ears." 4 per package. If the upper section of the agitator isn't turning properly, then these cogs are likely worn and will require replacement.</p> 
+          <p class="part-card__desc__price">$5.00</p>
+        </div>
+        <div class="part-card__desc__menu">
+          <input class="part-card__desc__menu__input" type="number">
+          <button class="btn--primary btn--dark">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    </div>
+   
+  <div class="our-services__content flex-row" data-aplience-parts = 'dishwasher'>
+    <div class="part-card">
+      <div class="part-card__picture">
+      </div>
+      <div class="part-card__desc">
+        <div class="part-card__desc__header">
+          <h3 class="part-card__desc__header__title"> Hose complect</h3>
+          <img src="../img/LG-logo.jpg" alt="company logo" class="part-card__desc__header__logo">
+        </div>
+        <div class="part-card__desc__text-container">
+          <p class="part-card__desc__text">Lorem ipsum, dolor sit amet consectetur adipisi00 luptatem culpa. Maxime, est!</p>
+          <p class="part-card__desc__price">$11.60</p>
+        </div>
+        <div class="part-card__desc__menu">
+          <input class="part-card__desc__menu__input" type="number">
+          <button class="btn--primary btn--dark">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="part-card">
+      <div class="part-card__picture">
+      </div>
+      <div class="part-card__desc">
+        <div class="part-card__desc__header">
+          <h3 class="part-card__desc__header__title"> Motor</h3>
+          <img src="../img/LG-logo.jpg" alt="company logo" class="part-card__desc__header__logo">
+        </div>
+        <div class="part-card__desc__text-container">
+          <p class="part-card__desc__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quisquam veniam quos aspernatur cumque, aut iusto iure amet voluptatum quo earum non sequi cum. Asperiores corporis voluptatem culpa. Maxime, est!</p>
+          <p class="part-card__desc__price">$31.00</p>
+        </div>
+        <div class="part-card__desc__menu">
+          <input class="part-card__desc__menu__input" type="number">
+          <button class="btn--primary btn--dark">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our-services__content flex-row" data-aplience-parts = 'vacuum-cleaner'>
 
+  </div>
+  <div class="our-services__content flex-row" data-aplience-parts = 'cofee-mashine'>
+    <div class="part-card">
+      <div class="part-card__picture">
+      </div>
+      <div class="part-card__desc">
+        <div class="part-card__desc__header">
+          <h3 class="part-card__desc__header__title"> Drain Pump</h3>
+          <img src="../img/LG-logo.jpg" alt="company logo" class="part-card__desc__header__logo">
+        </div>
+        <div class="part-card__desc__text-container">
+          <p class="part-card__desc__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quisquam veniam quos aspernatur cumque, aut iusto iure amet voluptatum quo earum non sequi cum. Asperiores corporis voluptatem culpa. Maxime, est!</p>
+          <p class="part-card__desc__price">$1.50</p>
+        </div>
+        <div class="part-card__desc__menu">
+          <input class="part-card__desc__menu__input" type="number">
+          <button class="btn--primary btn--dark">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our-services__content flex-row" data-aplience-parts = 'dry-mashine'>
+    <div class="part-card">
+      <div class="part-card__picture">
+        
+      </div>
+      <div class="part-card__desc">
+        <div class="part-card__desc__header">
+          <h3 class="part-card__desc__header__title">Button</h3>
+          <img src="../img/LG-logo.jpg" alt="company logo" class="part-card__desc__header__logo">
+        </div>
+        <div class="part-card__desc__text-container">
+          <p class="part-card__desc__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil eos rem rerum quam dignissimos neque ullam</p>
+          <p class="part-card__desc__price">$00.30</p>
+        </div>
+        <div class="part-card__desc__menu">
+          <input class="part-card__desc__menu__input" type="number">
+          <button class="btn--primary btn--dark">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our-services__content flex-row" data-aplience-parts = 'fashion-master'>
+    <div class="part-card">
+      <div class="part-card__picture">
+      </div>
+      <div class="part-card__desc">
+        <div class="part-card__desc__header">
+          <h3 class="part-card__desc__header__title">Kit conection</h3>
+          <img src="../img/LG-logo.jpg" alt="company logo" class="part-card__desc__header__logo">
+        </div>
+        <div class="part-card__desc__text-container">
+          <p class="part-card__desc__text">Large kit for diferent stuff</p>
+          <p class="part-card__desc__price">$151.50</p>
+        </div>
+        <div class="part-card__desc__menu">
+          <input class="part-card__desc__menu__input" type="number">
+          <button class="btn--primary btn--dark">Add to Cart</button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <section class="offer-share">
+  <div class="hello__angle  offer-share__angle"></div>
+  <h3 class="hello__title">ATTENTION!</h3>
   <div class="container">
-    <div class="offer-share__picture"><img src="img/offer__img.jpg" alt="offer__img" class="offer-share__img"></div>
+
     <div class="offer-share__desc fixed-bg">
-      <h1 class="offer-share__title">Акция!!!</h1>
-      <p class="offer-share__text">Успей получить бесплатную диагностику!</p>
+      <h1 class="offer-share__title">Proposition!!!</h1>
+      <p class="offer-share__text">Hurry up to get a free diagnosis!</p>
       <div class="offer-share__timer">
-        <p class="offer-share__title">до окончания акции осталось:</p>
+        <p class="offer-share__text">Until the end of the promotion left:</p>
         <div class="offer-share__time timer">
-          <div class="timer__block"><span class="timer__block__item" id="days">00</span>-Дней</div>
-          <div class="timer__block"><span class="timer__block__item" id="hours">00</span>-Часов</div>
-          <div class="timer__block"><span class="timer__block__item" id="minutes">00</span>-Минут</div>
-          <div class="timer__block"><span class="timer__block__item" id="seconds">00</span>-Секунд</div>
+          <div class="timer__block"><span class="timer__block__item" id="days">00</span>-days</div>
+          <div class="timer__block"><span class="timer__block__item" id="hours">00</span>-hours</div>
+          <div class="timer__block"><span class="timer__block__item" id="minutes">00</span>-minutes</div>
+          <div class="timer__block"><span class="timer__block__item" id="seconds">00</span>-seconds</div>
         </div>
       </div>
-      <div data-modal class="offer-share__btn btn--primary btn--dark"><p class="btn--primary__text">Получить купон</p></div>
+      <div data-modal class="offer-share__btn btn--primary btn--dark">
+        <p class="btn--primary__text">Get coupon</p>
+      </div>
     </div>
   </div>
 </section>
@@ -40,16 +204,17 @@
     <div class="modal__content">
       <form action="#">
         <div data-close="" class="modal__close">×</div>
-        <div class="modal__title">Получить купон на 
-          БЕСПЛАТНУЮ ДИАГНОСТИКУ</div>
-        <input required="" placeholder="Ваше имя" name="name" type="text" class="modal__input">
-        <input required="" placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-        <div data-modal class="modal__btn btn--primary btn--white"><p class="btn--primary__text">Получить купон</p></div>
+        <div class="modal__title">Get coupon
+          <strong>ON FREE DIAGNOSTIC!</strong></div>
+        <input required="" placeholder="Your name" name="name" type="text" class="modal__input">
+        <input required="" placeholder="Your phone number" name="phone" type="phone" class="modal__input">
+        <div data-modal class="modal__btn btn--primary btn--white">
+          <p class="btn--primary__text">Get coupon</p>
+        </div>
       </form>
     </div>
   </div>
 </div>
-
 
 @@include("blocks/_footer.html",
 {
